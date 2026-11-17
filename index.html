@@ -1,0 +1,70 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="{{ site.description | escape }}">
+  <title>{{ site.title | escape }}</title>
+  <link rel="canonical" href="{{ site.url }}/">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/favicon.svg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body id="top">
+  <div class="page-shell">
+    <header class="profile-header">
+      <h1>{{ site.name | escape }}</h1>
+      <div class="profile-meta">
+        <p>{{ site.role | escape }} · <a href="{{ site.lab_url }}" target="_blank" rel="noopener noreferrer">{{ site.lab | escape }}</a> · {{ site.institution | escape }}</p>
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+    </header>
+    <main>
+      <section class="content-section" id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <div class="section-body">
+          {% for paragraph in site.data.about.paragraphs %}
+            {{ paragraph | markdownify }}
+          {% endfor %}
+        </div>
+      </section>
+      <section class="content-section" id="publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Publications</h2>
+        <div class="section-body">
+          <ol class="publication-list">
+            {% for paper in site.data.publications %}{% include publication.html paper=paper %}{% endfor %}
+          </ol>
+        </div>
+      </section>
+      <section class="content-section" id="honors" aria-labelledby="honors-heading">
+        <h2 id="honors-heading">Honors &amp; Awards</h2>
+        <div class="section-body honors-list">
+          {% for award in site.data.awards %}
+          <div class="honor-item"><div class="honor-main"><strong>{{ award.title | escape }}</strong><span class="honor-organization">{{ award.organization | escape }}</span></div><span class="honor-year">{{ award.year }}</span></div>
+          {% endfor %}
+        </div>
+      </section>
+      <section class="content-section" id="service" aria-labelledby="service-heading">
+        <h2 id="service-heading">Service</h2>
+        <div class="section-body service-list">
+          <h3 class="list-heading">External Conference Reviewer</h3>
+          {% for item in site.data.service %}
+          <div class="service-item"><span class="service-conf">{{ item.conference | escape }}</span><span class="service-years">{{ item.years | escape }}</span></div>
+          {% endfor %}
+        </div>
+      </section>
+      <section class="content-section" id="education" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <div class="section-body education-list">
+          <div class="education-item"><div><strong>M.S. in AI Convergence Security</strong><div class="school">Soongsil University · Advisor: {{ site.advisor | escape }}</div></div><span class="education-date">2025–2027 (Expected)</span></div>
+          <div class="education-item"><div><strong>B.S. in Software</strong><div class="school">Soongsil University</div></div><span class="education-date">2019–2025</span></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© {{ site.time | date: '%Y' }} {{ site.name | escape }}</span><span>Last updated: November 2026</span></footer>
+  </div>
+</body>
+</html>

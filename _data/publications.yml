@@ -1,0 +1,54 @@
+# International journal / conference papers, newest first.
+# Asterisks mark co-first authors; no legend displayed by request.
+- year: 2027
+  category: international
+  title: 'CollabBank: Compact Collaborative Memory for Accurate Federated Recommendation'
+  authors:
+  - Daewon Gwak
+  - Jaehyun Park
+  - Hanvit Lee
+  - Gyuwon Je
+  - Jinhong Jung
+  venue: WSDM 2027 (Findings)
+  note: ''
+  paper: ''
+  code: ''
+- year: 2026
+  category: international
+  title: Do All Nodes Benefit Equally from Knowledge Graphs? Adaptive Node-Aware KG Fusion for Recommendation
+  authors:
+  - Jaehyun Park*
+  - Minseo Jeon*
+  - Daewon Gwak
+  - Sunuk Kim
+  - Hanvit Lee
+  - Jinhong Jung
+  venue: CIKM 2026
+  note: ''
+  paper: https://doi.org/10.1145/3799682.3840942
+  code: ''
+- year: 2026
+  category: international
+  title: 'Revisiting Classic Graph Neural Networks for Hypergraph Node Classification: An Extensive Empirical
+    Study'
+  authors:
+  - Daewon Gwak
+  - Jaehyun Park
+  - Sunuk Kim
+  - Jinhong Jung
+  venue: IEEE Access 2026
+  note: ''
+  paper: https://doi.org/10.1109/ACCESS.2026.3740904
+  code: ''
+- year: 2026
+  category: international
+  title: 'AlphaFree: Recommendation Free from Users, IDs, and GNNs'
+  authors:
+  - Minseo Jeon
+  - Junwoo Jung
+  - Daewon Gwak
+  - Jinhong Jung
+  venue: WWW 2026
+  note: ''
+  paper: https://doi.org/10.1145/3774904.3792355
+  code: ''

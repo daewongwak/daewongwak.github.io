@@ -1,0 +1,10 @@
+<li class="publication">
+  <div class="publication-body">
+    <div class="publication-title">{{ include.paper.title | escape }}</div>
+    <div class="publication-authors">{% for author in include.paper.authors %}{% if author == "Daewon Gwak" %}<strong>{{ author }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %}, and {% else %}, {% endif %}{% endunless %}{% endfor %}</div>
+    <div class="publication-meta">
+      <span class="publication-venue">{{ include.paper.venue | escape }}</span>
+      {% if include.paper.paper != "" %}<a class="paper-link" href="{{ include.paper.paper }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
+    </div>
+  </div>
+</li>

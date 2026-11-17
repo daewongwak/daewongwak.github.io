@@ -1,0 +1,17 @@
+title: Daewon Gwak | Academic Homepage
+description: Academic homepage of Daewon Gwak, a graduate researcher at Soongsil University.
+url: https://daewongwak.github.io
+baseurl: ''
+name: Daewon Gwak
+role: M.S. Candidate in AI Convergence Security
+institution: Soongsil University
+lab: Data Mining Lab.
+email: daewon1@soongsil.ac.kr
+advisor: Prof. Jinhong Jung
+advisor_url: https://jinhongjung.github.io
+lab_url: https://ssu-dmlab.github.io
+markdown: kramdown
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
