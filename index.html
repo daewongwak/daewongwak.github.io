@@ -50,7 +50,7 @@ layout: null
         <h2 id="honors-heading">Honors &amp; Awards</h2>
         <div class="section-body honors-list">
           {% for award in site.data.awards %}
-          <div class="honor-item"><div class="honor-main"><strong>{{ award.title | escape }}</strong><span class="honor-organization">{{ award.organization | escape }}</span></div><span class="honor-year">{{ award.year }}</span></div>
+          <div class="honor-item"><div class="honor-main"><strong>{{ award.title | escape }}</strong><span class="honor-organization"> @ {{ award.organization | escape }}</span></div><span class="honor-year">{{ award.year }}</span></div>
           {% endfor %}
         </div>
       </section>
@@ -66,21 +66,16 @@ layout: null
       <section class="content-section" id="education" aria-labelledby="education-heading">
         <h2 id="education-heading">Education</h2>
         <div class="section-body education-list">
-          <div class="education-item"><div><strong>M.S. in AI Convergence Security</strong><div class="school">Soongsil University · Advisor: {{ site.advisor | escape }}</div></div><span class="education-date">2025–2027 (Expected)</span></div>
+          <div class="education-item"><div><strong>M.S. in AI Convergence Security</strong><div class="school">Soongsil University · Advisor: {{ site.advisor | escape }}</div></div><span class="education-date">2025–2027</span></div>
           <div class="education-item"><div><strong>B.S. in Software</strong><div class="school">Soongsil University</div></div><span class="education-date">2019–2025</span></div>
         </div>
       </section>
       <section class="content-section" id="patents" aria-labelledby="patents-heading">
         <h2 id="patents-heading">Patents</h2>
-        <div class="section-body">
-          <ul class="patent-list">
-            {% for patent in site.data.patents %}
-            <li class="patent">
-              <span class="patent-title">{{ patent.title | escape }}</span>
-              <span class="patent-year">{{ patent.year }}</span>
-            </li>
-            {% endfor %}
-          </ul>
+        <div class="section-body patent-list">
+          {% for patent in site.data.patents %}
+          <div class="patent-item"><strong class="patent-title">{{ patent.title | escape }}</strong><span class="patent-year">{{ patent.year }}</span></div>
+          {% endfor %}
         </div>
       </section>
     </main>

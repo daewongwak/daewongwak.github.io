@@ -46,11 +46,11 @@ h2 { font-size: 19px; font-weight: 600; line-height: 1.4; letter-spacing: -.025e
 .publication-links { display: inline-flex; flex: none; gap: 15px; margin-left: auto; font-size: 12.8px; font-style: normal; white-space: nowrap; }
 .publication-group-heading { font-size: 13.8px; margin-bottom: 14px; }
 .domestic-heading { margin-top: 24px; }
-.honor-item, .education-item, .service-item { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 0 0 14px; margin: 0 0 14px; border-bottom: 1px solid #eeece8; }
-.honor-item:last-child, .education-item:last-child, .service-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-.honor-main strong, .education-item strong { font-size: 13.8px; font-weight: 660; }
-.honor-organization { display: block; font-size: 12.8px; color: var(--secondary); }
-.honor-year, .education-date { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
+.honor-item, .education-item, .service-item, .patent-item { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 0 0 14px; margin: 0 0 14px; border-bottom: 1px solid #eeece8; }
+.honor-item:last-child, .education-item:last-child, .service-item:last-child, .patent-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.honor-main strong, .education-item strong, .patent-title { font-size: 13.8px; font-weight: 660; }
+.honor-organization { display: inline; font-size: 13px; color: var(--secondary); white-space: nowrap; }
+.honor-year, .education-date, .patent-year { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
 .school { color: var(--secondary); font-size: 12.8px; }
 .service-list .list-heading { margin-bottom: 11px; }
 .service-item { padding: 7px 0 11px; margin: 0 0 6px; }
@@ -71,18 +71,12 @@ h2 { font-size: 19px; font-weight: 600; line-height: 1.4; letter-spacing: -.025e
   .profile-meta { font-size: 13px; }
   .publication-title { font-size: 14px; }
   .publication-authors, .publication-meta { font-size: 12.6px; }
-  .honor-item, .education-item, .service-item { gap: 7px; }
+  .honor-item, .education-item, .service-item, .patent-item { gap: 7px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 @media (max-width: 380px) { .education-date { white-space: normal; text-align: right; } }
 
 
-/* Patent entries: compact, year-aligned, and intentionally less prominent than papers. */
-.patent-list { list-style: none; padding: 0; margin: 0; }
-.patent { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; position: relative; border-bottom: 1px solid #eeece8; padding: 7px 0 11px 15px; margin-bottom: 3px; }
-.patent:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-.patent::before { content: '·'; position: absolute; left: 0; top: 7px; color: var(--secondary); }
-.patent-title { font-size: 13.7px; font-weight: 540; line-height: 1.55; }
-.patent-year { flex: none; color: var(--muted); font-size: 12.5px; white-space: nowrap; }
-@media (max-width: 420px) { .patent { gap: 12px; } .patent-title { font-size: 13px; } }
+/* Patent entries use the same two-column item styling as honors and education. */
+.patent-title { line-height: 1.55; }
