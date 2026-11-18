@@ -1,11 +1,7 @@
-# Edit the text here; Markdown links are supported.
-# Each item becomes a separate paragraph in the About section.
 paragraphs:
-  - >
-    I am an M.S. candidate in AI Convergence Security at Soongsil University,
-    South Korea, advised by [Prof. Jinhong Jung](https://jinhongjung.github.io).
-    I received my B.S. in Software from Soongsil University in February 2025.
-    I am a member of the [Data Mining Lab.](https://ssu-dmlab.github.io).
-  - >
-    My research interests include recommender systems, data mining,
-    and graph machine learning.
+- I am currently an M.S. student in the Department of AI Convergence Security at Soongsil University, advised by
+  [Prof. Jinhong Jung](https://jinhongjung.github.io). I received my B.S. in Software from Soongsil University in
+  2025 and plan to pursue my Ph.D. in the same research group.
+- My research interests include data mining, graph machine learning, and personalized AI. I am particularly interested
+  in revisiting assumptions underlying existing approaches, examining whether they hold in practice, and identifying
+  research problems through empirical analysis.

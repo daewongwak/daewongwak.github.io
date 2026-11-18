@@ -34,8 +34,15 @@ layout: null
       <section class="content-section" id="publications" aria-labelledby="publications-heading">
         <h2 id="publications-heading">Publications</h2>
         <div class="section-body">
+          <h3 class="list-heading publication-group-heading">International Publications</h3>
           <ol class="publication-list">
-            {% for paper in site.data.publications %}{% include publication.html paper=paper %}{% endfor %}
+            {% assign international_papers = site.data.publications | where: "category", "international" %}
+            {% for paper in international_papers %}{% include publication.html paper=paper %}{% endfor %}
+          </ol>
+          <h3 class="list-heading publication-group-heading domestic-heading">Domestic Conferences</h3>
+          <ol class="publication-list">
+            {% assign domestic_papers = site.data.publications | where: "category", "domestic" %}
+            {% for paper in domestic_papers %}{% include publication.html paper=paper %}{% endfor %}
           </ol>
         </div>
       </section>
@@ -61,6 +68,19 @@ layout: null
         <div class="section-body education-list">
           <div class="education-item"><div><strong>M.S. in AI Convergence Security</strong><div class="school">Soongsil University · Advisor: {{ site.advisor | escape }}</div></div><span class="education-date">2025–2027 (Expected)</span></div>
           <div class="education-item"><div><strong>B.S. in Software</strong><div class="school">Soongsil University</div></div><span class="education-date">2019–2025</span></div>
+        </div>
+      </section>
+      <section class="content-section" id="patents" aria-labelledby="patents-heading">
+        <h2 id="patents-heading">Patents</h2>
+        <div class="section-body">
+          <ul class="patent-list">
+            {% for patent in site.data.patents %}
+            <li class="patent">
+              <span class="patent-title">{{ patent.title | escape }}</span>
+              <span class="patent-year">{{ patent.year }}</span>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
       </section>
     </main>

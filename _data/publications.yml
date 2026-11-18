@@ -1,5 +1,5 @@
-# International journal / conference papers, newest first.
-# Asterisks mark co-first authors; no legend displayed by request.
+# International and domestic publications are rendered separately.
+# Paper and Code links appear only when a public URL is known.
 - year: 2027
   category: international
   title: 'CollabBank: Compact Collaborative Memory for Accurate Federated Recommendation'
@@ -26,11 +26,10 @@
   venue: CIKM 2026
   note: ''
   paper: https://doi.org/10.1145/3799682.3840942
-  code: ''
+  code: https://github.com/ssu-dmlab/adaKg
 - year: 2026
   category: international
-  title: 'Revisiting Classic Graph Neural Networks for Hypergraph Node Classification: An Extensive Empirical
-    Study'
+  title: 'Revisiting Classic Graph Neural Networks for Hypergraph Node Classification: An Extensive Empirical Study'
   authors:
   - Daewon Gwak
   - Jaehyun Park
@@ -39,7 +38,7 @@
   venue: IEEE Access 2026
   note: ''
   paper: https://doi.org/10.1109/ACCESS.2026.3740904
-  code: ''
+  code: https://github.com/daewongwak/ReHG
 - year: 2026
   category: international
   title: 'AlphaFree: Recommendation Free from Users, IDs, and GNNs'
@@ -51,4 +50,25 @@
   venue: WWW 2026
   note: ''
   paper: https://doi.org/10.1145/3774904.3792355
+  code: https://github.com/Minseojeonn/AlphaFree
+- year: 2025
+  category: domestic
+  title: Recommender System with Item Language Semantics and Knowledge Graphs
+  authors:
+  - Jaehyun Park
+  - Daewon Gwak
+  - Jinhong Jung
+  venue: KDBC 2025
+  note: ''
+  paper: ''
+  code: ''
+- year: 2024
+  category: domestic
+  title: Effective Representation Learning on Hypergraphs with Personalized PageRank
+  authors:
+  - Daewon Gwak
+  - Jinhong Jung
+  venue: KDBC 2024
+  note: ''
+  paper: ''
   code: ''
