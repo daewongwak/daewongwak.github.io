@@ -80,3 +80,38 @@ h2 { font-size: 19px; font-weight: 600; line-height: 1.4; letter-spacing: -.025e
 
 /* Patent entries use the same two-column item styling as honors and education. */
 .patent-title { line-height: 1.55; }
+
+
+/* Profile photo */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-photo {
+  display: block;
+  width: 145px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
+/* Mobile layout */
+@media (max-width: 680px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .profile-photo {
+    width: 120px;
+  }
+}
