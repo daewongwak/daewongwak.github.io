@@ -16,11 +16,19 @@ layout: null
 <body id="top">
   <div class="page-shell">
     <header class="profile-header">
-      <h1>{{ site.name | escape }}</h1>
-      <div class="profile-meta">
-        <p>{{ site.role | escape }} · <a href="{{ site.lab_url }}" target="_blank" rel="noopener noreferrer">{{ site.lab | escape }}</a> · {{ site.institution | escape }}</p>
-        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <div class="profile-info">
+        <h1>{{ site.name | escape }}</h1>
+        <div class="profile-meta">
+          <p>{{ site.role | escape }} · <a href="{{ site.lab_url }}" target="_blank" rel="noopener noreferrer">{{ site.lab | escape }}</a> · {{ site.institution | escape }}</p>
+          <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        </div>
       </div>
+    
+      <img
+        class="profile-photo"
+        src="{{ '/assets/img/profile.jpg' | relative_url }}"
+        alt="Portrait of Daewon Gwak"
+      >
     </header>
     <main>
       <section class="content-section" id="about" aria-labelledby="about-heading">
