@@ -1,7 +1,18 @@
 paragraphs:
-- I am currently an M.S. student in the Department of AI Convergence Security at Soongsil University, advised by
-  [Prof. Jinhong Jung](https://jinhongjung.github.io). I received my B.S. in Software from Soongsil University in
-  2025 and plan to pursue my Ph.D. in the same research group.
-- My research interests include data mining, graph machine learning, and personalized AI. I am particularly interested
-  in revisiting assumptions underlying existing approaches, examining whether they hold in practice, and identifying
-  research problems through empirical analysis.
+  - >-
+    I am an M.S. student in the Department of AI Convergence Security at Soongsil University,
+    where I am advised by [Prof. Jinhong Jung](https://jinhongjung.github.io).
+    I earned my B.S. in Software from Soongsil University in 2025
+    and plan to pursue my Ph.D. under his supervision.
+
+  - >-
+    My current research explores how federated recommender systems can achieve
+    competitive recommendation accuracy with low communication costs,
+    specifically by retrieving information tailored to each client’s behavior
+    from compact server-side memories in a single round of communication.
+
+  - >-
+    Ultimately, my research aims to develop personalized AI systems that
+    understand the nuances of each user’s behavior and context and enable
+    AI agents to collaborate and exchange information in privacy-preserving ways
+    to offer a diverse range of options tailored to each individual.

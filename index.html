@@ -82,7 +82,7 @@ layout: null
         <h2 id="patents-heading">Patents</h2>
         <div class="section-body patent-list">
           {% for patent in site.data.patents %}
-          <div class="patent-item"><div class="patent-main"><strong class="patent-title">{{ patent.title | escape }}</strong> <span class="patent-jurisdiction">(KR)</span></div><span class="patent-year">{{ patent.year }}</span></div>
+          <div class="patent-item"><div class="patent-main"><strong class="patent-title">{{ patent.title | escape }}</strong> {% if patent.jurisdiction %}<span class="patent-jurisdiction">({{ patent.jurisdiction | escape }})</span>{% endif %}</div><span class="patent-year">{{ patent.year }}</span></div>
           {% endfor %}
         </div>
       </section>
