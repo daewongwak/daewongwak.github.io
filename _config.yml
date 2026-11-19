@@ -8,8 +8,8 @@ institution: Soongsil University
 lab: Data Mining Lab.
 email: daewon1@soongsil.ac.kr
 advisor: Prof. Jinhong Jung
-# Add your public Google Scholar profile URL after you create it.
-scholar_url: ""
+# Public Google Scholar profile.
+scholar_url: "https://scholar.google.com/citations?user=2lbD0mUAAAAJ"
 # Verified from the Daewon Gwak author link in the DBLP AlphaFree record.
 dblp_url: "https://dblp.org/pid/431/9148.html"
 github_url: "https://github.com/daewongwak"

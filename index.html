@@ -28,7 +28,7 @@ layout: null
           </nav>
         </div>
       </div>
-      <img class="profile-photo" src="{{ '/assets/img/profile.png' | relative_url }}" alt="Portrait of Daewon Gwak" width="413" height="531">
+      <img class="profile-photo" src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Portrait of Daewon Gwak" width="413" height="531">
     </header>
     <main>
       <section class="content-section" id="about" aria-labelledby="about-heading">
@@ -81,9 +81,8 @@ layout: null
       <section class="content-section" id="patents" aria-labelledby="patents-heading">
         <h2 id="patents-heading">Patents</h2>
         <div class="section-body patent-list">
-          <h3 class="list-heading patent-category-heading">Korean Patent Applications (KR)</h3>
           {% for patent in site.data.patents %}
-          <div class="patent-item"><strong class="patent-title">{{ patent.title | escape }}</strong><span class="patent-year">{{ patent.year }}</span></div>
+          <div class="patent-item"><div class="patent-main"><strong class="patent-title">{{ patent.title | escape }}</strong> <span class="patent-jurisdiction">(KR)</span></div><span class="patent-year">{{ patent.year }}</span></div>
           {% endfor %}
         </div>
       </section>

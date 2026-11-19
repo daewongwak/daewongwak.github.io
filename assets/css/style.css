@@ -87,7 +87,9 @@ h2 { font-size: 19px; font-weight: 600; line-height: 1.4; letter-spacing: -.025e
 .profile-photo { display: block; flex-shrink: 0; width: 145px; height: auto; border-radius: 3px; }
 .profile-links { padding-top: 11px; font-size: 13.5px; }
 .link-separator { margin: 0 8px; color: #aaa5a0; }
-.patent-category-heading { margin-bottom: 17px; font-size: 13px; font-weight: 570; color: var(--secondary); }
+/* Country code after each filing title; keep title bold and year aligned. */
+.patent-main { min-width: 0; }
+.patent-jurisdiction { font-size: 12.5px; color: var(--secondary); white-space: nowrap; }
 @media (max-width: 680px) {
   .profile-header { align-items: flex-start; }
   .profile-photo { width: 112px; }
