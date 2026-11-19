@@ -81,37 +81,20 @@ h2 { font-size: 19px; font-weight: 600; line-height: 1.4; letter-spacing: -.025e
 /* Patent entries use the same two-column item styling as honors and education. */
 .patent-title { line-height: 1.55; }
 
-
-/* Profile photo */
-.profile-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-}
-
-.profile-info {
-  flex: 1;
-  min-width: 0;
-}
-
-.profile-photo {
-  display: block;
-  width: 145px;
-  height: auto;
-  flex-shrink: 0;
-  border-radius: 4px;
-}
-
-/* Mobile layout */
+/* Profile photo and research profile links. */
+.profile-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 28px; }
+.profile-info { flex: 1; min-width: 0; }
+.profile-photo { display: block; flex-shrink: 0; width: 145px; height: auto; border-radius: 3px; }
+.profile-links { padding-top: 11px; font-size: 13.5px; }
+.link-separator { margin: 0 8px; color: #aaa5a0; }
+.patent-category-heading { margin-bottom: 17px; font-size: 13px; font-weight: 570; color: var(--secondary); }
 @media (max-width: 680px) {
-  .profile-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
-  }
-
-  .profile-photo {
-    width: 120px;
-  }
+  .profile-header { align-items: flex-start; }
+  .profile-photo { width: 112px; }
+}
+@media (max-width: 420px) {
+  .profile-header { gap: 14px; }
+  .profile-photo { width: 96px; }
+  .profile-links { font-size: 12px; }
+  .link-separator { margin: 0 5px; }
 }
